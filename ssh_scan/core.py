@@ -52,7 +52,7 @@ class SSHScanner:
                     result = str(error)
                     fail = True
 
-                handler.write('IP: %s %s\n' % (addr, result))
+                handler.write('IP: %s %s' % (addr, result))
 
         return fail
 
