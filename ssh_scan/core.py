@@ -60,7 +60,7 @@ class SSHScanner:
         """ Build IP address """
 
         for part in range(1, 255):
-            yield '.'.join(str(x) for x in iter(self._net + (part,))
+            yield '.'.join(str(x) for x in iter(self._net + (part,)))
 
     def _get_credentials(self):
         """ Return user/password pair, support 2 pairs """
