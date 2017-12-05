@@ -47,7 +47,7 @@ class SSHScanner:
                 try:
                     result = self._request_host(addr, **next(keys))
                 except AuthenticationException:
-                    result = self._request_host(addr, **next(keys))
+                    result = '%s (EOS)' % self._request_host(addr, **next(keys))
                 except Exception as error:
                     result = str(error)
                     fail = True
