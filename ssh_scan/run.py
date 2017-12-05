@@ -4,7 +4,7 @@
 
 import sys
 
-from ssh_scan import SSHScanner
+from ssh_scan.core import SSHScanner
 
 
 CONF = {
