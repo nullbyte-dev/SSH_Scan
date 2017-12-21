@@ -1,5 +1,5 @@
 """
-    Linux SSH Scanner Core
+    Linux SSH Scanner & SFTP Sender Core
 """
 
 import paramiko
@@ -83,6 +83,7 @@ class BaseSSHClient:
         """ Implement request logic in subclasses """
 
         raise NotImplementedError
+
 
 class SSHScanner(BaseSSHClient):
     """
